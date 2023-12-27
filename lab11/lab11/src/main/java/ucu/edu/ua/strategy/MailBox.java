@@ -9,11 +9,11 @@ public class MailBox {
     private List<MailInfo> infos = new ArrayList<>();
     private MailSender sender;
 
-    public void addMailInfo(MailInfo mailInfo){
+    public void addMailInfo(MailInfo mailInfo) {
         infos.add(mailInfo);
     }
 
-    public void sendAll(){
+    public void sendAll() {
         for (MailInfo mail : infos) {
             sender.sendMail(mail);
         }
