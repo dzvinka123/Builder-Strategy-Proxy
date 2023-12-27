@@ -11,12 +11,12 @@ import com.mailjet.client.resource.Emailv31;
 import org.json.JSONArray;
 import org.json.JSONObject;
 
-public class MailSender {
+public class MailSender{
     public static final String API_KEY = System.getenv("MAILJET_API_KEY");
     public static final String API_SECRET = System.getenv("MAILJET_SECRET_KEY");
     private Map<MailCode, MailStrategy> contentGeneratorMap;
 
-    public MailSender() {
+    public MailSender(){
         contentGeneratorMap = new HashMap<>();
         contentGeneratorMap.put(MailCode.BIRTHDAYMAIL, new BirthdayMailStrategy());
         contentGeneratorMap.put(MailCode.GIFTMAIL, new GiftMailStrategy());
