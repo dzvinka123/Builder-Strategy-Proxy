@@ -15,7 +15,7 @@ jobs:
       - name: Set up JDK 14
         uses: actions/setup-java@v3
         with:
-          java-version: '17'
+          java-version: '14'
           distribution: 'corretto'
       - name: Lint Code Base
         uses: github/super-linter/slim@v4
