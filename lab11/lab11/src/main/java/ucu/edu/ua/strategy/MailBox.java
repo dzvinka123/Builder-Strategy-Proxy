@@ -13,7 +13,7 @@ public class MailBox {
         infos.add(mailInfo);
     }
 
-    public void sendAll() {
+    public void sendAll(){
         for (MailInfo mail : infos) {
             sender.sendMail(mail);
         }
