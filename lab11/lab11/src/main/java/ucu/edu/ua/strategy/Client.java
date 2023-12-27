@@ -4,7 +4,7 @@ import lombok.Getter;
 import lombok.Setter;
 import ucu.edu.ua.builder.Gender;
 
-public class Client {
+public class Client{
     public static int counter = 0;
 
     @Getter @Setter
@@ -19,7 +19,7 @@ public class Client {
     private String email;
 
 
-    public Client(String name, int age, Gender sex, String email) {
+    public Client(String name, int age, Gender sex, String email){
         this.id = calculateNumber();
         this.name = name;
         this.age = age;
