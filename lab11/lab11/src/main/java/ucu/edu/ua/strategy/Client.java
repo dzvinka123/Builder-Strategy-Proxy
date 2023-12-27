@@ -5,7 +5,8 @@ import lombok.Setter;
 import ucu.edu.ua.builder.Gender;
 
 public class Client{
-    public static int counter = 0;
+    @Getter
+    private static int counter = 0;
 
     @Getter @Setter
     private int id;
