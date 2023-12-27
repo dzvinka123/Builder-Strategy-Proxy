@@ -41,15 +41,16 @@ public class MailSender {
                                 .put(Emailv31.Message.TEXTPART, content)));
 
 
-      //   try {
-      //       response = client.post(request);
-      //       System.out.println("Response Status: " + response.getStatus());
-      //       System.out.println("Response Data: " + response.getData());
-      //   } catch (Exception e) {
-      //       e.printStackTrace();
-      // }
-        response = client.post(request);
-        System.out.println("Response Status: " + response.getStatus());
+        try {
+            response = client.post(request);
+            System.out.println("Response Status: " + response.getStatus());
+            System.out.println("Response Data: " + response.getData());
+        } catch (Exception e) {
+            // e.printStackTrace();
+            System.out.println("Response Status: FAILED!")
+      }
+        // response = client.post(request);
+        // System.out.println("Response Status: " + response.getStatus());
     }
 
 
