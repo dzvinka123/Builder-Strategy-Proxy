@@ -12,8 +12,8 @@ public class ProxyImage implements MyImage {
     }
 
     @Override
-    public void displayPhoto(){
-        if (image == null){
+    public void displayPhoto() {
+        if (image == null) {
             image = new RealImage(filename);
         }
         image.displayPhoto();
