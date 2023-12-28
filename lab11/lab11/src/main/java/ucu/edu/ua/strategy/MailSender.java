@@ -46,11 +46,8 @@ public class MailSender {
             System.out.println("Response Status: " + response.getStatus());
             System.out.println("Response Data: " + response.getData());
         } catch (Exception e) {
-            // e.printStackTrace();
-            System.out.println("Response Status: FAILED!");
+            e.printStackTrace();
       }
-        // response = client.post(request);
-        // System.out.println("Response Status: " + response.getStatus());
     }
 
 
