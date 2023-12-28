@@ -21,7 +21,7 @@ public class MailSender {
         contentGeneratorMap.put(MailCode.BIRTHDAYMAIL, new BirthdayMailStrategy());
         contentGeneratorMap.put(MailCode.GIFTMAIL, new GiftMailStrategy());
     }
-    public void sendMail(MailInfo mailInfo){
+    public void sendMail(MailInfo mailInfo) {
         String name = mailInfo.getClient().getName();
         String email = mailInfo.getClient().getEmail();
         MailStrategy strategy = contentGeneratorMap.get(mailInfo.getMailCode());
